@@ -1,0 +1,436 @@
+/* ============================================
+   Portfolio CSS
+   ============================================ */
+
+/* --- Variables --- */
+:root {
+  --bg: #0d0d0d;
+  --bg-section-dark: #111111;
+  --bg-card: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text-muted: #888;
+  --accent: #7c6ff7;      /* purple */
+  --accent2: #56cfb2;     /* teal */
+  --accent3: #f7c948;     /* yellow */
+  --font-main: 'Inter', 'Noto Sans JP', sans-serif;
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+/* --- Reset --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  font-size: 16px;
+}
+a { color: inherit; text-decoration: none; }
+img, video { max-width: 100%; display: block; }
+
+/* --- Container --- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(13,13,13,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.nav-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+.nav-links a:hover { color: var(--text); }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+}
+.mobile-menu.open { display: flex; }
+.mobile-link {
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  transition: color var(--transition), background var(--transition);
+}
+.mobile-link:hover { color: var(--text); background: var(--bg); }
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(124,111,247,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-greeting {
+  font-size: 1rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+  animation: fadeUp 0.6s ease both;
+}
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  animation: fadeUp 0.6s 0.1s ease both;
+}
+.hero-role {
+  font-size: 1.1rem;
+  color: var(--accent2);
+  margin-bottom: 1.25rem;
+  animation: fadeUp 0.6s 0.2s ease both;
+}
+.hero-desc {
+  max-width: 560px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.6s 0.3s ease both;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s 0.4s ease both;
+}
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  animation: bounce 2s infinite;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #6a5ee8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(124,111,247,0.35);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--border);
+}
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section {
+  padding: 6rem 0;
+}
+.section-dark {
+  background: var(--bg-section-dark);
+}
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.section-title-accent {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 0.5rem;
+}
+.section-desc {
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+/* ============================================
+   WORKS GRID
+   ============================================ */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.work-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+}
+
+/* Thumbnail */
+.work-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #1a1a2a;
+  overflow: hidden;
+  position: relative;
+}
+.work-thumb video,
+.work-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.work-thumb-placeholder {
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--text-muted);
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  letter-spacing: 0.05em;
+}
+
+/* Body */
+.work-body {
+  padding: 1.25rem;
+}
+.work-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.work-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Tags */
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  background: rgba(124,111,247,0.15);
+  color: var(--accent);
+  border: 1px solid rgba(124,111,247,0.3);
+}
+
+/* Work Link Buttons */
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.work-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+.work-btn:hover { transform: translateY(-1px); }
+.work-btn-github { color: #e8e8e8; }
+.work-btn-github:hover { border-color: #e8e8e8; background: rgba(255,255,255,0.05); }
+.work-btn-demo { color: var(--accent2); border-color: rgba(86,207,178,0.3); }
+.work-btn-demo:hover { background: rgba(86,207,178,0.08); }
+.work-btn-notion { color: var(--accent3); border-color: rgba(247,201,72,0.3); }
+.work-btn-notion:hover { background: rgba(247,201,72,0.08); }
+
+/* ============================================
+   ABOUT
+   ============================================ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.about-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+.about-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Skill Bars */
+.skills-list { display: flex; flex-direction: column; gap: 0.9rem; }
+.skill-item {}
+.skill-name {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.skill-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
+/* ============================================
+   CONTACT
+   ============================================ */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  color: var(--text-muted);
+}
+.contact-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(124,111,247,0.2);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  .works-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-title { font-size: 2.5rem; }
+}
