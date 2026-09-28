@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | YOUR NAME</title>
-  <meta name="description" content="YOUR NAMEのポートフォリオサイト。作品紹介・自己PRなど。" />
+  <title>Portfolio | kiyo</title>
+  <meta name="description" content="kiyoのポートフォリオサイト。Unityゲーム開発を中心とした作品紹介・自己PRなど。" />
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -16,7 +15,7 @@
   <!-- ========== NAVBAR ========== -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a href="#home" class="nav-logo">YOUR NAME</a>
+      <a href="#home" class="nav-logo">kiyo</a>
       <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#works">Works</a>
@@ -25,7 +24,6 @@
       </nav>
       <button class="hamburger" id="hamburger" aria-label="メニュー">&#9776;</button>
     </div>
-    <!-- mobile menu -->
     <div class="mobile-menu" id="mobileMenu">
       <a href="#home" class="mobile-link">Home</a>
       <a href="#works" class="mobile-link">Works</a>
@@ -38,12 +36,11 @@
   <section class="hero" id="home">
     <div class="hero-content">
       <p class="hero-greeting">こんにちは 👋</p>
-      <h1 class="hero-title">YOUR NAME</h1>
-      <p class="hero-role">エンジニア / 〇〇専攻</p>
+      <h1 class="hero-title">kiyo</h1>
+      <p class="hero-role">Game Developer / Unity Engineer</p>
       <p class="hero-desc">
-        <!-- 一言自己PRをここに書く -->
-        作ることが好きなエンジニアです。<br>
-        ユーザーが使いやすいプロダクトを作ることにこだわっています。
+        Unityを使ったゲーム開発が得意なエンジニアです。<br>
+        シェーダー・AI・システム設計まで幅広く挑戦しています。
       </p>
       <div class="hero-buttons">
         <a href="#works" class="btn btn-primary">作品を見る</a>
@@ -59,88 +56,172 @@
   <section class="section" id="works">
     <div class="container">
       <h2 class="section-title">Works <span class="section-title-accent">作品一覧</span></h2>
-      <p class="section-desc">これまでに作ったプロダクトの一覧です。</p>
+      <p class="section-desc">これまでに作ったゲーム・プロダクトの一覧です。</p>
 
       <div class="works-grid">
 
-        <!-- ===== WORK CARD 1 ===== -->
+        <!-- ===== DialogueSystem ===== -->
         <article class="work-card">
           <div class="work-thumb">
-            <!-- 実行動画がある場合は video タグ、なければ img タグで差し替え -->
             <div class="work-thumb-placeholder">
-              🎬 Demo
-              <!-- <video src="videos/demo1.mp4" autoplay muted loop playsinline></video> -->
-              <!-- <img src="images/thumb1.png" alt="作品1 サムネイル"> -->
+              💬 DialogueSystem
+              <!-- 実行動画があれば↓のコメントを外して差し替え -->
+              <!-- <video src="videos/dialogue.mp4" autoplay muted loop playsinline></video> -->
+              <!-- <img src="images/dialogue.png" alt="DialogueSystem"> -->
             </div>
           </div>
           <div class="work-body">
-            <h3 class="work-title">作品名 A</h3>
+            <h3 class="work-title">DialogueSystem</h3>
             <p class="work-desc">
-              〇〇の課題を解決するために作ったアプリ。△△機能が特徴で、◻◻を使って実装しました。
+              Unityで実装したダイアログシステム。NPCとの会話・分岐・演出を一元管理できる汎用フレームワーク。
             </p>
             <div class="work-tags">
-              <span class="tag">Python</span>
-              <span class="tag">React</span>
-              <span class="tag">Docker</span>
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Game</span>
             </div>
             <div class="work-links">
-              <a href="https://github.com/YOUR_USERNAME/project-a" target="_blank" rel="noopener" class="work-btn work-btn-github">
+              <a href="https://github.com/kiyochann/DialogueSystem" target="_blank" rel="noopener" class="work-btn work-btn-github">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
                 GitHub
               </a>
-              <a href="https://your-demo-url.com" target="_blank" rel="noopener" class="work-btn work-btn-demo">
-                🌐 Live Demo
-              </a>
-              <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">
-                📖 Notion
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ===== WORK CARD 2 ===== -->
-        <article class="work-card">
-          <div class="work-thumb">
-            <div class="work-thumb-placeholder">🎬 Demo</div>
-          </div>
-          <div class="work-body">
-            <h3 class="work-title">作品名 B</h3>
-            <p class="work-desc">
-              〇〇の問題に取り組んだプロジェクト。チームで開発し、△△の役割を担当しました。
-            </p>
-            <div class="work-tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Supabase</span>
-            </div>
-            <div class="work-links">
-              <a href="https://github.com/YOUR_USERNAME/project-b" target="_blank" rel="noopener" class="work-btn work-btn-github">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-              </a>
-              <a href="https://your-demo-b-url.com" target="_blank" rel="noopener" class="work-btn work-btn-demo">🌐 Live Demo</a>
               <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
             </div>
           </div>
         </article>
 
-        <!-- ===== WORK CARD 3 ===== -->
+        <!-- ===== RobotSumoSimulator ===== -->
         <article class="work-card">
           <div class="work-thumb">
-            <div class="work-thumb-placeholder">🎬 Demo</div>
+            <div class="work-thumb-placeholder">
+              🤖 RobotSumoSimulator
+              <!-- <video src="videos/sumo.mp4" autoplay muted loop playsinline></video> -->
+            </div>
           </div>
           <div class="work-body">
-            <h3 class="work-title">作品名 C</h3>
+            <h3 class="work-title">RobotSumoSimulator</h3>
             <p class="work-desc">
-              個人開発プロジェクト。〇〇にこだわって設計しました。
+              ロボット相撲をシミュレートするUnityアプリ。ShaderLabを活用したビジュアル表現が特徴。
             </p>
             <div class="work-tags">
-              <span class="tag">Go</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Docker</span>
+              <span class="tag">Unity</span>
+              <span class="tag">ShaderLab</span>
+              <span class="tag">Simulation</span>
             </div>
             <div class="work-links">
-              <a href="https://github.com/YOUR_USERNAME/project-c" target="_blank" rel="noopener" class="work-btn work-btn-github">
+              <a href="https://github.com/kiyochann/RobotSumoSimulator" target="_blank" rel="noopener" class="work-btn work-btn-github">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== soukoban ===== -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-placeholder">
+              📦 倉庫番
+              <!-- <video src="videos/soukoban.mp4" autoplay muted loop playsinline></video> -->
+            </div>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">倉庫番 (soukoban)</h3>
+            <p class="work-desc">
+              Unityで実装したパズルゲーム「倉庫番」。ステージ設計からUI実装まで一人で開発。
+            </p>
+            <div class="work-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Puzzle Game</span>
+            </div>
+            <div class="work-links">
+              <a href="https://github.com/kiyochann/soukoban" target="_blank" rel="noopener" class="work-btn work-btn-github">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== ShootingGame ===== -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-placeholder">
+              🎯 ShootingGame
+              <!-- <video src="videos/shooting.mp4" autoplay muted loop playsinline></video> -->
+            </div>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">ShootingGame</h3>
+            <p class="work-desc">
+              GLSLシェーダーを駆使したシューティングゲーム。リッチなビジュアルエフェクトにこだわった作品。
+            </p>
+            <div class="work-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">GLSL</span>
+              <span class="tag">Shader</span>
+            </div>
+            <div class="work-links">
+              <a href="https://github.com/kiyochann/ShootingGame" target="_blank" rel="noopener" class="work-btn work-btn-github">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== FastAWay ===== -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-placeholder">
+              🚀 FastAWay
+              <!-- <video src="videos/fastaway.mp4" autoplay muted loop playsinline></video> -->
+            </div>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">FastAWay</h3>
+            <p class="work-desc">
+              HTMLで実装したゲームプロジェクト。ブラウザ上で動作する軽量なゲーム体験を提供。
+            </p>
+            <div class="work-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Browser Game</span>
+            </div>
+            <div class="work-links">
+              <a href="https://github.com/kiyochann/FastAWay" target="_blank" rel="noopener" class="work-btn work-btn-github">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== marioReproduction ===== -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <div class="work-thumb-placeholder">
+              🍄 マリオ再現
+              <!-- <video src="videos/mario.mp4" autoplay muted loop playsinline></video> -->
+            </div>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">marioReproduction</h3>
+            <p class="work-desc">
+              JavaScriptでスーパーマリオを再現したブラウザゲーム。物理演算・アニメーション・当たり判定をスクラッチで実装。
+            </p>
+            <div class="work-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5 Canvas</span>
+              <span class="tag">Game</span>
+            </div>
+            <div class="work-links">
+              <a href="https://github.com/kiyochann/marioReproduction" target="_blank" rel="noopener" class="work-btn work-btn-github">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
                 GitHub
               </a>
@@ -161,14 +242,14 @@
         <div class="about-text">
           <h3>🙋 自己紹介</h3>
           <p>
-            〇〇大学 △△学部 ◻◻年生の <strong>YOUR NAME</strong> です。<br>
-            〇〇に興味を持ち、個人・チームでプロダクト開発に取り組んでいます。
+            ゲーム開発が好きなエンジニア <strong>kiyo</strong> です。<br>
+            Unityを中心に、シェーダー・AI・システム設計など幅広い技術に挑戦しています。<br>
+            ゲームを通じて、技術で人を楽しませることを目指しています。
           </p>
           <h3 style="margin-top:1.5rem;">💡 自己PR</h3>
           <p>
-            私の強みは「<strong>〇〇力</strong>」です。<br>
-            [Notionの自己PRをここにコピーしてください]<br><br>
-            また、開発において△△を大切にしており、◻◻を心がけています。
+            <!-- Notionの自己PRをここにコピーしてください -->
+            詳細な自己PRはNotionページをご覧ください。
           </p>
           <a href="https://app.notion.com/p/PR-3ced7fbc4f4280c1aed7e9f5d25919b8" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block;">
             📝 詳細な自己PR（Notion）
@@ -178,24 +259,24 @@
           <h3>🛠 Tech Stack</h3>
           <div class="skills-list">
             <div class="skill-item">
-              <span class="skill-name">Python</span>
-              <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+              <span class="skill-name">Unity / C#</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">JavaScript / TypeScript</span>
+              <span class="skill-name">GLSL / ShaderLab</span>
               <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">React / Next.js</span>
+              <span class="skill-name">JavaScript / HTML5</span>
               <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">Docker</span>
-              <div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div>
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">Git / GitHub</span>
-              <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+              <span class="skill-name">Game Design</span>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
             </div>
           </div>
         </div>
@@ -209,18 +290,12 @@
       <h2 class="section-title">Contact <span class="section-title-accent">連絡先</span></h2>
       <p class="section-desc">お気軽にご連絡ください。</p>
       <div class="contact-links">
-        <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener" class="contact-btn">
+        <a href="https://github.com/kiyochann" target="_blank" rel="noopener" class="contact-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
+          GitHub (@kiyochann)
         </a>
         <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="contact-btn">
           📝 Notion
-        </a>
-        <a href="mailto:your.email@example.com" class="contact-btn">
-          ✉️ Email
-        </a>
-        <a href="https://twitter.com/YOUR_TWITTER" target="_blank" rel="noopener" class="contact-btn">
-          🐦 X / Twitter
         </a>
       </div>
     </div>
@@ -229,7 +304,7 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 YOUR NAME. All rights reserved.</p>
+      <p>© 2026 kiyo. All rights reserved.</p>
       <p style="margin-top:0.25rem;font-size:0.8rem;opacity:0.6;">Built with ❤️ and vanilla HTML/CSS</p>
     </div>
   </footer>

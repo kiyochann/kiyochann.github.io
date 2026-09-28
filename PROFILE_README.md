@@ -1,65 +1,77 @@
-# YOUR NAME — Portfolio
+# kiyo — Portfolio
 
-> 🌐 **ポートフォリオサイト**: [https://YOUR_USERNAME.github.io](https://YOUR_USERNAME.github.io)  
-> 📝 **Notion Profile**: [ポートフォリオ一覧](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8) / [自己PR](https://app.notion.com/p/PR-3ced7fbc4f4280c1aed7e9f5d25919b8)
+> 🌐 **ポートフォリオサイト**: [https://kiyochann.github.io](https://kiyochann.github.io)  
+> 📝 **Notion Profile**: [ポートフォリオ](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8) / [自己PR](https://app.notion.com/p/PR-3ced7fbc4f4280c1aed7e9f5d25919b8)
 
 ---
 
 ## 💡 自己PR
 
-[Notionの自己PRの内容をここにコピーしてください]
+<!-- Notionの自己PRをここにコピーしてください -->
 
 ### 🛠 Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-000000?style=flat&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
+![GLSL](https://img.shields.io/badge/GLSL-5586A4?style=flat&logo=opengl&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ---
 
 ## 🚀 ピックアップ作品
 
-### 1. [作品名A](https://github.com/YOUR_USERNAME/project-a) — キャッチコピー
-> 〇〇の課題を解決するために作ったアプリ。
+### 1. [DialogueSystem](https://github.com/kiyochann/DialogueSystem) — Unityダイアログシステム
+> NPCとの会話・分岐・演出を一元管理できる汎用フレームワーク。
 
-https://user-images.githubusercontent.com/YOUR_USER_ID/demo-a.gif
+**使用技術**: Unity, C#  
+**こだわり**: 汎用性の高いシステム設計
 
-**使用技術**: Python, React, Docker  
-**こだわり**: 〇〇のアルゴリズムを自作し、処理速度を大幅向上
-
-🌐 [Live Demo](https://your-demo-url.com) | 📂 [GitHub](https://github.com/YOUR_USERNAME/project-a) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
+📂 [GitHub](https://github.com/kiyochann/DialogueSystem) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
 
 ---
 
-### 2. [作品名B](https://github.com/YOUR_USERNAME/project-b) — キャッチコピー
-> 〇〇の問題に取り組んだチーム開発プロジェクト。
+### 2. [RobotSumoSimulator](https://github.com/kiyochann/RobotSumoSimulator) — ロボット相撲シミュレーター
+> ShaderLabを活用したリッチなビジュアル表現が特徴のシミュレーションアプリ。
 
-https://user-images.githubusercontent.com/YOUR_USER_ID/demo-b.gif
+**使用技術**: Unity, ShaderLab  
+**こだわり**: シェーダーによるビジュアル表現
 
-**使用技術**: Next.js, TypeScript, Supabase  
-**こだわり**: リアルタイム通信・レスポンシブ対応
-
-🌐 [Live Demo](https://your-demo-b-url.com) | 📂 [GitHub](https://github.com/YOUR_USERNAME/project-b) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
+📂 [GitHub](https://github.com/kiyochann/RobotSumoSimulator) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
 
 ---
 
-### 3. [作品名C](https://github.com/YOUR_USERNAME/project-c) — キャッチコピー
-> 個人開発プロジェクト。〇〇にこだわって設計。
+### 3. [soukoban](https://github.com/kiyochann/soukoban) — 倉庫番
+> Unityで実装したパズルゲーム。ステージ設計からUI実装まで一人で開発。
 
-**使用技術**: Go, PostgreSQL, Docker  
-**こだわり**: 〇〇
+**使用技術**: Unity, C#  
 
-📂 [GitHub](https://github.com/YOUR_USERNAME/project-c) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
+📂 [GitHub](https://github.com/kiyochann/soukoban) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
 
 ---
 
-👉 **全作品の詳細・実行動画は [ポートフォリオサイト](https://YOUR_USERNAME.github.io) にて公開しています！**
+### 4. [ShootingGame](https://github.com/kiyochann/ShootingGame) — シューティングゲーム
+> GLSLシェーダーを駆使したリッチなビジュアルエフェクトのシューティングゲーム。
+
+**使用技術**: Unity, GLSL
+
+📂 [GitHub](https://github.com/kiyochann/ShootingGame) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
+
+---
+
+### 5. [marioReproduction](https://github.com/kiyochann/marioReproduction) — マリオ再現
+> JavaScriptでスーパーマリオをスクラッチ実装。物理演算・当たり判定もゼロから。
+
+**使用技術**: JavaScript, HTML5 Canvas
+
+📂 [GitHub](https://github.com/kiyochann/marioReproduction) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
+
+---
+
+👉 **全作品の詳細・実行動画は [ポートフォリオサイト](https://kiyochann.github.io) にて公開しています！**
 
 ---
 
 ## 📬 Contact
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@kiyochann](https://github.com/kiyochann)
 - Notion: [プロフィール](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
-- Email: your.email@example.com
