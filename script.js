@@ -30,53 +30,22 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// --- 動画モーダル ---
-const videoModal = document.getElementById('videoModal');
-const modalVideo = document.getElementById('modalVideo');
-const videoModalTitle = document.getElementById('videoModalTitle');
-const videoModalClose = document.getElementById('videoModalClose');
-
-const openVideoModal = (url, title) => {
-  if (!videoModal || !modalVideo) return;
-  modalVideo.src = url;
-  if (videoModalTitle) videoModalTitle.textContent = title;
-  videoModal.classList.add('active');
-  modalVideo.play().catch(() => {});
-};
-
-const closeVideoModal = () => {
-  if (!videoModal || !modalVideo) return;
-  videoModal.classList.remove('active');
-  modalVideo.pause();
-  modalVideo.src = '';
-};
-
-document.querySelectorAll('.work-btn-video').forEach(btn => {
-  btn.addEventListener('click', () => {
+// --- サムネイル内のインライン動画再生 ---
+document.querySelectorAll('.play-video-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
     const videoUrl = btn.getAttribute('data-video');
-    const title = btn.getAttribute('data-title') || '実行動画';
-    if (videoUrl) {
-      openVideoModal(videoUrl, title);
+    const targetId = btn.getAttribute('data-target');
+    const targetThumb = document.getElementById(targetId);
+
+    if (targetThumb && videoUrl) {
+      targetThumb.innerHTML = `
+        <video src="${videoUrl}" controls autoplay playsinline style="width:100%;height:100%;object-fit:contain;background:#000;">
+          お使いのブラウザは動画再生に対応していません。
+        </video>
+      `;
     }
   });
-});
-
-if (videoModalClose) {
-  videoModalClose.addEventListener('click', closeVideoModal);
-}
-
-if (videoModal) {
-  videoModal.addEventListener('click', (e) => {
-    if (e.target === videoModal) {
-      closeVideoModal();
-    }
-  });
-}
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && videoModal && videoModal.classList.contains('active')) {
-    closeVideoModal();
-  }
 });
 
 // --- スクロールアニメーション (Intersection Observer) ---
