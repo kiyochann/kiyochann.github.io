@@ -30,15 +30,31 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// --- サムネイル内のインライン動画再生 ---
+// --- サムネイル内のインライン動画再生 (YouTube & mp4 両対応) ---
 document.querySelectorAll('.play-video-btn').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
+    const youtubeId = btn.getAttribute('data-youtube');
     const videoUrl = btn.getAttribute('data-video');
     const targetId = btn.getAttribute('data-target');
     const targetThumb = document.getElementById(targetId);
 
-    if (targetThumb && videoUrl) {
+    if (!targetThumb) return;
+
+    if (youtubeId) {
+      // YouTube iframe 埋め込み自動再生
+      targetThumb.innerHTML = `
+        <iframe 
+          src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen 
+          style="width:100%;height:100%;border:none;background:#000;">
+        </iframe>
+      `;
+    } else if (videoUrl) {
+      // HTML5 video 再生
       targetThumb.innerHTML = `
         <video src="${videoUrl}" controls autoplay playsinline style="width:100%;height:100%;object-fit:contain;background:#000;">
           お使いのブラウザは動画再生に対応していません。

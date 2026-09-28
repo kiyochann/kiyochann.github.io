@@ -18,9 +18,9 @@
 ---
 
 ## 2. 制作済みファイル構成
-- `index.html`: ポートフォリオWebサイト本体（全6作品、インライン動画再生機能、ビルドリンク完備）
+- `index.html`: ポートフォリオWebサイト本体（全6作品、YouTubeインライン再生対応、ビルドリンク完備）
 - `style.css`: ダークテーマ・レスポンシブデザイン・カードUI
-- `script.js`: サムネイル内動画再生、スクロールアニメーション、スマホメニュー
+- `script.js`: YouTube/HTML5動画インライン埋め込み再生、スクロールアニメーション、スマホメニュー
 - `PROFILE_README.md`: GitHubプロフィール（`kiyochann/kiyochann`）用のマークダウン
 - `images/`: 各作品の実物スクリーンショット画像（6作品分）
 
@@ -32,44 +32,44 @@
    - ジャンル: Tool / Unity エディタ拡張
    - 技術: Unity, C#, ノードエディタ
    - 担当・期間: 個人開発 / 2カ月〜
-   - 動画: `https://purkinako-spec.github.io/ShareRepository/dialogueSystem.mp4`
-   - GitHub: `https://github.com/kiyochann/DialogueSystem`
+   - 🎬 YouTube動画: `https://youtu.be/ML_tuBJDlZA`
+   - 📂 GitHub: `https://github.com/kiyochann/DialogueSystem`
 
 2. **ロボット相撲シミュレータ**
    - ジャンル: シミュレーション / シリアスゲーム
    - 技術: Unity, C#, 構文解析(Parser), ShaderLab
    - 担当・期間: 個人開発 / 2カ月
-   - 動画: `https://purkinako-spec.github.io/ShareRepository/Robot.mp4`
-   - ビルド: `https://github.com/kiyochann/RobotSumoSimulator/blob/main/Build.zip`
-   - GitHub: `https://github.com/kiyochann/RobotSumoSimulator`
+   - 🎬 YouTube動画: `https://youtu.be/GhKgn-QVFMM`
+   - 📦 ビルド: `https://github.com/kiyochann/RobotSumoSimulator/blob/main/Build.zip`
+   - 📂 GitHub: `https://github.com/kiyochann/RobotSumoSimulator`
 
 3. **帰路 (チーム制作)**
    - ジャンル: カジュアルホラー
    - 技術: Unity, C#, チーム開発
    - 担当・期間: ゲームプレイ, サウンド, 会話システム / 8カ月〜
-   - 動画: `https://purkinako-spec.github.io/ShareRepository/kaerimiti.mp4`
-   - ビルド: `https://purkinako-spec.github.io/ShareRepository/kaerimiti.zip`
+   - 🎬 YouTube動画: `https://youtu.be/275uJzGWrTo`
+   - 📦 ビルド: `https://purkinako-spec.github.io/ShareRepository/kaerimiti.zip`
 
 4. **ShootingGame（C++ 2D）**
    - ジャンル: 2.5D シューティング
    - 技術: C++, GLSL, OOP (ポリモーフィズム・継承)
    - 担当・期間: 個人開発 / 2カ月
-   - 動画: `https://purkinako-spec.github.io/ShareRepository/Shooting.mp4`
-   - GitHub: `https://github.com/kiyochann/ShootingGame`
+   - 🎬 動画: `https://purkinako-spec.github.io/ShareRepository/Shooting.mp4`
+   - 📂 GitHub: `https://github.com/kiyochann/ShootingGame`
 
 5. **FASTAWAY**
    - ジャンル: ランアクション (ゲームジャム)
    - 技術: JavaScript, WWS.js, ボスAI
    - 担当・期間: 全てのプログラミング / 1カ月
-   - 動画: `https://purkinako-spec.github.io/ShareRepository/run.mp4`
-   - GitHub: `https://github.com/kiyochann/FastAWay`
+   - 🎬 動画: `https://purkinako-spec.github.io/ShareRepository/run.mp4`
+   - 📂 GitHub: `https://github.com/kiyochann/FastAWay`
 
 6. **倉庫番の再現**
    - ジャンル: パズル
    - 技術: Unity, C#
    - 担当・期間: 個人開発 / 1カ月
-   - 動画: `https://purkinako-spec.github.io/ShareRepository/sokoban.mp4`
-   - GitHub: `https://github.com/kiyochann/soukoban`
+   - 🎬 動画: `https://purkinako-spec.github.io/ShareRepository/sokoban.mp4`
+   - 📂 GitHub: `https://github.com/kiyochann/soukoban`
 
 ---
 
@@ -93,6 +93,9 @@
    - `git push -u origin main` でプッシュ
    - GitHubリポジトリの設定で Pages を有効化（Branch: main）
 2. **クリ博への作品登録**:
-   - 動画を YouTube に限定公開でアップロードし、共有リンクを登録
+   - YouTube共有URLを動画欄に入力：
+     - DialogueSystem: `https://youtu.be/ML_tuBJDlZA`
+     - ロボット相撲シミュレータ: `https://youtu.be/GhKgn-QVFMM`
+     - 帰路: `https://youtu.be/275uJzGWrTo`
    - 作品順序: ① DialogueSystem → ② ロボット相撲 → ③ 帰路
    - WebポートフォリオURL（`https://kiyochann.github.io`）を記載

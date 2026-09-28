@@ -26,7 +26,7 @@
 - **担当 / 期間**: 個人開発 / 2カ月〜
 - **使用技術**: Unity, C#, ノードベースエディタ
 - **工夫点**: プログラミングが苦手なクリエイターでも直感的に会話を組めるノードUIを開発。インポートするだけで即座に使えるパッケージ化を進行中。
-- 🎬 [実行動画](https://purkinako-spec.github.io/ShareRepository/dialogueSystem.mp4) | 📂 [GitHub](https://github.com/kiyochann/DialogueSystem) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
+- 🎬 [YouTubeで見る](https://youtu.be/ML_tuBJDlZA) | 📂 [GitHub](https://github.com/kiyochann/DialogueSystem) | 📖 [Notion](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8)
 
 ---
 
@@ -37,7 +37,7 @@
 - **担当 / 期間**: 個人開発 / 2カ月
 - **使用技術**: Unity, C#, 構文解析(Parser), ShaderLab
 - **工夫点**: プレイヤーが入力したテキストから安全に命令を抽出する字句解析器を実装。実機に合わせて車輪やセンサの配置・挙動を忠実に再現。
-- 🎬 [実行動画](https://purkinako-spec.github.io/ShareRepository/Robot.mp4) | 📦 [ビルド DL](https://github.com/kiyochann/RobotSumoSimulator/blob/main/Build.zip) | 📂 [GitHub](https://github.com/kiyochann/RobotSumoSimulator)
+- 🎬 [YouTubeで見る](https://youtu.be/GhKgn-QVFMM) | 📦 [ビルド DL](https://github.com/kiyochann/RobotSumoSimulator/blob/main/Build.zip) | 📂 [GitHub](https://github.com/kiyochann/RobotSumoSimulator)
 
 ---
 
@@ -48,7 +48,7 @@
 - **担当 / 期間**: ゲームプレイ, サウンド / 8カ月〜
 - **使用技術**: Unity, C#, チーム開発
 - **工夫点**: 会話関係のシステム構築と、没入感・恐怖感を高めるサウンド演出のシステム設計を担当。
-- 🎬 [実行動画](https://purkinako-spec.github.io/ShareRepository/kaerimiti.mp4) | 📦 [ビルド DL](https://purkinako-spec.github.io/ShareRepository/kaerimiti.zip)
+- 🎬 [YouTubeで見る](https://youtu.be/275uJzGWrTo) | 📦 [ビルド DL](https://purkinako-spec.github.io/ShareRepository/kaerimiti.zip)
 
 ---
 
