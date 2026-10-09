@@ -1,6 +1,6 @@
 # 前田 清斗 (kiyo)
 
-> 🎮 **ゲームプログラマ (クライアント / フロント / ツール)**  
+> 🎮 **ゲームプログラマ（クライアント / ツール開発）**  
 > 🌐 **ポートフォリオサイト**: [https://kiyochann.github.io](https://kiyochann.github.io)  
 > 📝 **Notion Profile**: [ポートフォリオ詳細](https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8) / [自己PR](https://app.notion.com/p/PR-3ced7fbc4f4280c1aed7e9f5d25919b8)  
 > ✉️ **Contact**: kiyoto.school@gmail.com
@@ -11,15 +11,13 @@
 ![Unity](https://img.shields.io/badge/Unity-000000?style=flat&logo=unity&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![GLSL](https://img.shields.io/badge/GLSL-5586A4?style=flat&logo=opengl&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ---
 
 ## 🚀 制作実績 (Works)
 
-### 1. [DialogueSystem](https://github.com/kiyochann/DialogueSystem) — Unity 会話システム拡張ツール
+### ★ 【目玉作品】[DialogueSystem](https://github.com/kiyochann/DialogueSystem) — Unity 会話システム拡張ツール
 > NPCとの会話・演出・分岐を円滑に行えるUnityエディタ拡張機能。
 
 - **ジャンル**: Tool / エディタ拡張
@@ -35,7 +33,7 @@
 
 - **ジャンル**: シミュレーション
 - **担当 / 期間**: 個人開発 / 2カ月
-- **使用技術**: Unity, C#, 構文解析(Parser), ShaderLab
+- **使用技術**: Unity, C#, 構文解析(Parser)
 - **工夫点**: プレイヤーが入力したテキストから安全に命令を抽出する字句解析器を実装。実機に合わせて車輪やセンサの配置・挙動を忠実に再現。
 - 🎬 [YouTubeで見る](https://youtu.be/GhKgn-QVFMM) | 📦 [ビルド DL](https://github.com/kiyochann/RobotSumoSimulator/blob/main/Build.zip) | 📂 [GitHub](https://github.com/kiyochann/RobotSumoSimulator)
 
@@ -57,7 +55,7 @@
 
 - **ジャンル**: 2.5Dシューティング
 - **担当 / 期間**: 個人開発 / 2カ月
-- **使用技術**: C++, GLSL, OOP
+- **使用技術**: C++, オブジェクト指向 (OOP)
 - **工夫点**: 2D画面において3軸の大きさをクラスに持たせることで接触判定の複雑化を防ぎ、エンティティのサイズ変更に柔軟に対応。
 - 🎬 [実行動画](https://purkinako-spec.github.io/ShareRepository/Shooting.mp4) | 📂 [GitHub](https://github.com/kiyochann/ShootingGame)
 

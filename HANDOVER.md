@@ -7,7 +7,7 @@
 
 ## 1. 基本プロフィール
 - **名前**: 前田 清斗（まえだ きよと / kiyo）
-- **志望職種**: ゲームプログラマ（フロント / クライアント / ツール）
+- **志望職種**: ゲームプログラマ（クライアント / ツール開発）
 - **GitHub**: [https://github.com/kiyochann](https://github.com/kiyochann)
 - **ポートフォリオ用リポジトリ**: [https://github.com/kiyochann/kiyochann.github.io](https://github.com/kiyochann/kiyochann.github.io)
 - **公開URL**: `https://kiyochann.github.io`
@@ -18,8 +18,8 @@
 ---
 
 ## 2. 制作済みファイル構成
-- `index.html`: ポートフォリオWebサイト本体（全6作品、YouTubeインライン再生対応、ビルドリンク完備）
-- `style.css`: ダークテーマ・レスポンシブデザイン・カードUI
+- `index.html`: ポートフォリオWebサイト本体（目玉作品特大表示、YouTubeインライン再生対応、ビルドリンク完備）
+- `style.css`: 明るめダークスレートテーマ・ハイコントラスト・目玉作品強調・カード視認性向上
 - `script.js`: YouTube/HTML5動画インライン埋め込み再生、スクロールアニメーション、スマホメニュー
 - `PROFILE_README.md`: GitHubプロフィール（`kiyochann/kiyochann`）用のマークダウン
 - `images/`: 各作品の実物スクリーンショット画像（6作品分）
@@ -28,7 +28,7 @@
 
 ## 3. 掲載作品一覧（全6作品）
 
-1. **DialogueSystem**
+1. **★ 【目玉作品】DialogueSystem**
    - ジャンル: Tool / Unity エディタ拡張
    - 技術: Unity, C#, ノードエディタ
    - 担当・期間: 個人開発 / 2カ月〜
@@ -37,7 +37,7 @@
 
 2. **ロボット相撲シミュレータ**
    - ジャンル: シミュレーション / シリアスゲーム
-   - 技術: Unity, C#, 構文解析(Parser), ShaderLab
+   - 技術: Unity, C#, 構文解析(Parser)
    - 担当・期間: 個人開発 / 2カ月
    - 🎬 YouTube動画: `https://youtu.be/GhKgn-QVFMM`
    - 📦 ビルド: `https://github.com/kiyochann/RobotSumoSimulator/blob/main/Build.zip`
@@ -52,7 +52,7 @@
 
 4. **ShootingGame（C++ 2D）**
    - ジャンル: 2.5D シューティング
-   - 技術: C++, GLSL, OOP (ポリモーフィズム・継承)
+   - 技術: C++, オブジェクト指向 (OOP)
    - 担当・期間: 個人開発 / 2カ月
    - 🎬 動画: `https://purkinako-spec.github.io/ShareRepository/Shooting.mp4`
    - 📂 GitHub: `https://github.com/kiyochann/ShootingGame`
@@ -85,17 +85,3 @@
 > 入社初期はクライアントエンジニアとして、手触りの良い操作感や演出、安定したゲームロジックの実装に泥臭く取り組み、タイトルの面白さを形作る確かな実装力を培います。
 > 将来的には、これまで取り組んできたエディタ拡張やシミュレータ制作の経験を活かし、チーム全体の制作を加速させる「内製ツールや基盤設計」を主導したいと考えています。企画やデザインのメンバーが直感的に試行錯誤できる環境を整えることで、クリエイティブな挑戦を増やし、作品全体のクオリティを引き上げます。
 > 技術で仲間を支え、プレイヤーに新しい驚きを届け続けるエンジニアを目指します。
-
----
-
-## 5. 次のステップ・残タスク
-1. **GitHub Pages への公開**:
-   - `git push -u origin main` でプッシュ
-   - GitHubリポジトリの設定で Pages を有効化（Branch: main）
-2. **クリ博への作品登録**:
-   - YouTube共有URLを動画欄に入力：
-     - DialogueSystem: `https://youtu.be/ML_tuBJDlZA`
-     - ロボット相撲シミュレータ: `https://youtu.be/GhKgn-QVFMM`
-     - 帰路: `https://youtu.be/275uJzGWrTo`
-   - 作品順序: ① DialogueSystem → ② ロボット相撲 → ③ 帰路
-   - WebポートフォリオURL（`https://kiyochann.github.io`）を記載

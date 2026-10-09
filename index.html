@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>前田清斗 (kiyo) | ポートフォリオ</title>
-  <meta name="description" content="前田清斗 (kiyo) のポートフォリオサイト。ゲームプログラマ志望。Unity / C++ / エディタ拡張などの制作実績・動画・ビルド・GitHubリンクを掲載。" />
+  <title>PORTFOLIO | 前田清斗 (kiyo)</title>
+  <meta name="description" content="前田清斗 (kiyo) のポートフォリオサイト。ゲームプログラマ（クライアント / ツール開発）。Unity / C++ / エディタ拡張などの制作実績・動画・ビルド・GitHubリンクを掲載。" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- ========== NAVBAR ========== -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a href="#home" class="nav-logo">kiyo.portfolio</a>
+      <a href="#home" class="nav-logo">
+        PORTFOLIO <span class="nav-logo-badge">kiyo</span>
+      </a>
       <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#works">Works</a>
@@ -35,12 +37,15 @@
   <!-- ========== HERO ========== -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <div class="hero-badge">🎮 Game Programmer Portfolio</div>
-      <h1 class="hero-title">前田 清斗 <span style="font-size:0.6em;color:var(--text-muted);font-weight:500;">(kiyo)</span></h1>
-      <p class="hero-role">Game Programmer (Client / Front / Tools)</p>
+      <div class="hero-badge">GAME PROGRAMMER PORTFOLIO</div>
+      <!-- ポートフォリオを大きく、名前は控えめに配置 -->
+      <h1 class="hero-title">PORTFOLIO</h1>
+      <p class="hero-subtitle">前田 清斗 <strong>(kiyo)</strong></p>
+      <!-- 読みやすい日本語の肩書 -->
+      <p class="hero-role">ゲームプログラマ（クライアント / ツール開発）</p>
       <p class="hero-desc">
         Unity・C++を中心としたゲームプログラミングと、開発を円滑にするエディタ拡張・ツール開発に取り組んでいます。<br>
-        プレイヤーを楽しませるゲームプレイと、堅牢で拡張しやすいシステム設計を両立することを目指しています。
+        プレイヤーを楽しませるゲーム体験と、チームや自分が開発しやすいシステム設計の両立を目指しています。
       </p>
       <div class="hero-buttons">
         <a href="#works" class="btn btn-primary">作品一覧を見る</a>
@@ -60,55 +65,61 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Works <span class="section-title-accent">/ 制作実績</span></h2>
-        <p class="section-desc">これまでに開発したゲーム・拡張ツールです。動画・ビルド・リポジトリをご覧いただけます。</p>
+        <p class="section-desc">これまでに開発したゲームおよびエディタ拡張ツールです。</p>
       </div>
 
+      <!-- ==============================================
+           ★ 目玉作品 (FEATURED WORK - 特大表示)
+           ============================================== -->
+      <article class="featured-work">
+        <div class="featured-thumb" id="thumb-featured-dialogue">
+          <img src="images/dialogue.png" alt="DialogueSystem サムネイル" loading="lazy" />
+          <button type="button" class="thumb-play-overlay play-video-btn" data-youtube="ML_tuBJDlZA" data-target="thumb-featured-dialogue" aria-label="動画を再生">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+        <div class="featured-body">
+          <div class="featured-badge-row">
+            <span class="badge-featured">★ PICKUP / 目玉作品</span>
+            <span class="badge-genre">Tool / Unity エディタ拡張</span>
+          </div>
+          <h3 class="featured-title">DialogueSystem</h3>
+          <div class="featured-meta">
+            <span>⏱ 制作期間: 2カ月〜</span>
+            <span>👤 担当: 個人開発（全機能）</span>
+          </div>
+          <p class="featured-desc">
+            ゲーム開発において会話イベント・演出の実装を容易かつ円滑に行えるUnity向けのエディタ拡張ツール。プラグイン機構を参考に拡張性の高いシステムを設計しました。
+          </p>
+          <div class="featured-points">
+            <div class="featured-points-title">💡 技術的こだわり・工夫点</div>
+            プログラミングができない企画・シナリオ担当者でも直感的に会話分岐を構築できるよう、ノードベースのエディタUIを実装。Unityにインポートするだけで即座にプロジェクトへ導入できる設計を進めています。
+          </div>
+          <div class="work-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">エディタ拡張</span>
+            <span class="tag">ノードベースUI</span>
+          </div>
+          <div class="work-links">
+            <a href="https://youtu.be/ML_tuBJDlZA" target="_blank" rel="noopener" class="work-btn work-btn-video">
+              ▶ YouTubeで見る
+            </a>
+            <a href="https://github.com/kiyochann/DialogueSystem" target="_blank" rel="noopener" class="work-btn work-btn-github">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ==============================================
+           一般作品一覧 (グリッド表示)
+           ============================================== -->
       <div class="works-grid">
 
-        <!-- ===== 1. DialogueSystem ===== -->
-        <article class="work-card">
-          <div class="work-thumb" id="thumb-dialogue">
-            <img src="images/dialogue.png" alt="DialogueSystem サムネイル" loading="lazy" />
-            <div class="work-thumb-overlay">
-              <span class="badge-genre">Tool / Unity Extension</span>
-            </div>
-            <button type="button" class="thumb-play-overlay play-video-btn" data-youtube="ML_tuBJDlZA" data-target="thumb-dialogue" aria-label="動画を再生">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </button>
-          </div>
-          <div class="work-body">
-            <h3 class="work-title">DialogueSystem</h3>
-            <div class="work-meta-row">
-              <span class="work-meta-item">⏱ 制作期間: 2カ月〜</span>
-              <span class="work-meta-item">👤 担当: 個人開発</span>
-            </div>
-            <p class="work-desc">
-              ゲーム開発において会話機能の実装を容易かつ円滑に行えるUnity拡張ツール。プラグイン機構を参考に拡張性の高い設計を実現。
-            </p>
-            <div class="work-points">
-              <div class="work-points-title">💡 工夫・アピール点</div>
-              プログラミングができない開発者でも容易に使えるノードベース設計を採用。インポートするだけで即座に使用できるパッケージ化を進行中。
-            </div>
-            <div class="work-tags">
-              <span class="tag">Unity</span>
-              <span class="tag">C#</span>
-              <span class="tag">Editor Extension</span>
-              <span class="tag">Node Editor</span>
-            </div>
-            <div class="work-links">
-              <a href="https://youtu.be/ML_tuBJDlZA" target="_blank" rel="noopener" class="work-btn work-btn-video">
-                ▶ YouTubeで見る
-              </a>
-              <a href="https://github.com/kiyochann/DialogueSystem" target="_blank" rel="noopener" class="work-btn work-btn-github">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-              </a>
-              <a href="https://app.notion.com/p/3ced7fbc4f42809dbfa2db2295648eb8" target="_blank" rel="noopener" class="work-btn work-btn-notion">📖 Notion</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ===== 2. ロボット相撲シミュレータ ===== -->
+        <!-- ===== 1. ロボット相撲シミュレータ ===== -->
         <article class="work-card">
           <div class="work-thumb" id="thumb-robot">
             <img src="images/robot.png" alt="ロボット相撲シミュレータ サムネイル" loading="lazy" />
@@ -126,7 +137,7 @@
               <span class="work-meta-item">👤 担当: 個人開発</span>
             </div>
             <p class="work-desc">
-              ロボット相撲の動作原理をゲーム内でスクリプティングして学べるシリアスゲーム。高校時代の部活動の経験をもとに開発。
+              実競技「ロボット相撲」の動作原理をゲーム感覚でスクリプティングして学べるシリアスゲーム。高校時代の部活動の経験をもとに開発。
             </p>
             <div class="work-points">
               <div class="work-points-title">💡 工夫・アピール点</div>
@@ -135,8 +146,8 @@
             <div class="work-tags">
               <span class="tag">Unity</span>
               <span class="tag">C#</span>
-              <span class="tag">Parser</span>
-              <span class="tag">ShaderLab</span>
+              <span class="tag">構文解析 (Parser)</span>
+              <span class="tag">シミュレーション</span>
             </div>
             <div class="work-links">
               <a href="https://youtu.be/GhKgn-QVFMM" target="_blank" rel="noopener" class="work-btn work-btn-video">
@@ -154,7 +165,7 @@
           </div>
         </article>
 
-        <!-- ===== 3. 帰路(チーム制作) ===== -->
+        <!-- ===== 2. 帰路(チーム制作) ===== -->
         <article class="work-card">
           <div class="work-thumb" id="thumb-kaerimiti">
             <img src="images/kaerimiti.png" alt="帰路 サムネイル" loading="lazy" />
@@ -181,8 +192,8 @@
             <div class="work-tags">
               <span class="tag">Unity</span>
               <span class="tag">C#</span>
-              <span class="tag">Team Dev</span>
-              <span class="tag">Audio System</span>
+              <span class="tag">チーム開発</span>
+              <span class="tag">サウンドシステム</span>
             </div>
             <div class="work-links">
               <a href="https://youtu.be/275uJzGWrTo" target="_blank" rel="noopener" class="work-btn work-btn-video">
@@ -196,7 +207,7 @@
           </div>
         </article>
 
-        <!-- ===== 4. ShootingGame（C++ 2D） ===== -->
+        <!-- ===== 3. ShootingGame（C++ 2D） ===== -->
         <article class="work-card">
           <div class="work-thumb" id="thumb-shooting">
             <img src="images/shooting.png" alt="ShootingGame サムネイル" loading="lazy" />
@@ -222,8 +233,8 @@
             </div>
             <div class="work-tags">
               <span class="tag">C++</span>
-              <span class="tag">OOP / Polymorphism</span>
-              <span class="tag">GLSL</span>
+              <span class="tag">オブジェクト指向 (OOP)</span>
+              <span class="tag">クラス設計</span>
             </div>
             <div class="work-links">
               <a href="https://purkinako-spec.github.io/ShareRepository/Shooting.mp4" target="_blank" rel="noopener" class="work-btn work-btn-video">
@@ -238,7 +249,7 @@
           </div>
         </article>
 
-        <!-- ===== 5. FASTAWAY ===== -->
+        <!-- ===== 4. FASTAWAY ===== -->
         <article class="work-card">
           <div class="work-thumb" id="thumb-fastaway">
             <img src="images/fastaway.png" alt="FASTAWAY サムネイル" loading="lazy" />
@@ -265,8 +276,8 @@
             <div class="work-tags">
               <span class="tag">JavaScript</span>
               <span class="tag">WWS.js</span>
-              <span class="tag">Game Jam</span>
-              <span class="tag">Boss AI</span>
+              <span class="tag">ゲームジャム</span>
+              <span class="tag">ボスAI</span>
             </div>
             <div class="work-links">
               <a href="https://purkinako-spec.github.io/ShareRepository/run.mp4" target="_blank" rel="noopener" class="work-btn work-btn-video">
@@ -281,7 +292,7 @@
           </div>
         </article>
 
-        <!-- ===== 6. 倉庫番の再現 ===== -->
+        <!-- ===== 5. 倉庫番の再現 ===== -->
         <article class="work-card">
           <div class="work-thumb" id="thumb-soukoban">
             <img src="images/soukoban.png" alt="倉庫番の再現 サムネイル" loading="lazy" />
@@ -308,7 +319,7 @@
             <div class="work-tags">
               <span class="tag">Unity</span>
               <span class="tag">C#</span>
-              <span class="tag">Game Mechanics</span>
+              <span class="tag">ゲームメカニクス</span>
             </div>
             <div class="work-links">
               <a href="https://purkinako-spec.github.io/ShareRepository/sokoban.mp4" target="_blank" rel="noopener" class="work-btn work-btn-video">
@@ -327,24 +338,28 @@
     </div>
   </section>
 
-  <!-- ========== ABOUT / 自己紹介・自己PR ========== -->
+  <!-- ========== ABOUT / 自己紹介・自己PR (名前を大きく強調) ========== -->
   <section class="section section-dark" id="about">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">About <span class="section-title-accent">/ 自己紹介・スキル</span></h2>
+        <h2 class="section-title">About <span class="section-title-accent">/ 自己紹介</span></h2>
       </div>
 
       <div class="about-grid">
         <div class="about-card">
+          <!-- 名前をここで大きくアピール -->
+          <div class="about-profile-header">
+            <h3 class="about-name">
+              前田 清斗 <span class="about-name-en">Maeda Kiyoto (kiyo)</span>
+            </h3>
+            <p class="about-title-tag">ゲームプログラマ志望（クライアント / ツール開発）</p>
+          </div>
+
           <table class="profile-meta-table">
             <tbody>
               <tr>
-                <td>名前</td>
-                <td>前田 清斗 (kiyo)</td>
-              </tr>
-              <tr>
                 <td>志望職種</td>
-                <td>ゲームプログラマ (フロント / クライアント / ツール)</td>
+                <td>ゲームプログラマ（クライアント / ツール開発）</td>
               </tr>
               <tr>
                 <td>GitHub</td>
@@ -376,7 +391,7 @@
           <div class="about-text">
             <h3>🛠 技術スタック</h3>
           </div>
-          <div class="skills-list" style="margin-top:1.2rem;">
+          <div class="skills-list" style="margin-top:1.4rem;">
             <div class="skill-item">
               <div class="skill-header">
                 <span>Unity / C#</span>
@@ -386,35 +401,21 @@
             </div>
             <div class="skill-item">
               <div class="skill-header">
-                <span>Unity エディタ拡張 / Tool</span>
+                <span>Unity エディタ拡張 / ツール開発</span>
                 <span style="color:var(--accent2);">80%</span>
               </div>
               <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-header">
-                <span>C++ / クラス設計</span>
+                <span>C++ (オブジェクト指向・クラス設計)</span>
                 <span style="color:var(--accent2);">75%</span>
               </div>
               <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
             </div>
             <div class="skill-item">
               <div class="skill-header">
-                <span>GLSL / ShaderLab</span>
-                <span style="color:var(--accent2);">70%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>JavaScript / HTML5</span>
-                <span style="color:var(--accent2);">70%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Git / GitHub チーム開発</span>
+                <span>チーム開発 / Git</span>
                 <span style="color:var(--accent2);">80%</span>
               </div>
               <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
