@@ -6,7 +6,7 @@
 ---
 
 ## 1. 基本プロフィール
-- **名前**: 前田 清斗（まえだ きよと / kiyo）
+- **名前**: 前田 清斗（まえだ きよと）
 - **志望職種**: ゲームプログラマ（クライアント / ツール開発）
 - **GitHub**: [https://github.com/kiyochann](https://github.com/kiyochann)
 - **ポートフォリオ用リポジトリ**: [https://github.com/kiyochann/kiyochann.github.io](https://github.com/kiyochann/kiyochann.github.io)

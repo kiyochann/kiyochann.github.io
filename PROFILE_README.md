@@ -1,4 +1,4 @@
-# 前田 清斗 (kiyo)
+# 前田 清斗
 
 > 🎮 **ゲームプログラマ（クライアント / ツール開発）**  
 > 🌐 **ポートフォリオサイト**: [https://kiyochann.github.io](https://kiyochann.github.io)  
