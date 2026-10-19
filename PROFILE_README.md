@@ -39,7 +39,7 @@
 
 ---
 
-### 3. 帰路 (チーム制作) — ホラーアドベンチャー
+### 3. 帰り路 (チーム制作) — ホラーアドベンチャー
 > 学内チームで制作中のホラーゲーム。夜道を歩く独特の緊迫感を演出。
 
 - **ジャンル**: カジュアルホラー
@@ -79,6 +79,17 @@
 - **担当 / 期間**: 個人開発 / 1カ月
 - **使用技術**: Unity, C#
 - 🎬 [実行動画](https://purkinako-spec.github.io/ShareRepository/sokoban.mp4) | 📂 [GitHub](https://github.com/kiyochann/soukoban)
+---
+
+### 7. [スーパーマリオブラザーズ 1-1 再現](https://github.com/kiyochann/marioReproduction) — 2Dアクション
+> 初代スーパーマリオブラザーズの1-1ステージを忠実に再現したWebブラウザゲーム。
+
+- **ジャンル**: 2Dアクション
+- **担当 / 期間**: 個人開発 / 1カ月
+- **使用技術**: JavaScript, HTML5 Canvas
+- **工夫点**: 60FPS独自物理演算（可変ジャンプ・慣性・加速度）やタイル判定、ポール滑り〜城への自動歩行ゴール演出を徹底再現。
+- 🎬 [実行動画](https://purkinako-spec.github.io/ShareRepository/%E4%BD%9C%E5%93%81%E5%AE%9F%E6%BC%94%E5%8B%95%E7%94%BB%EF%BC%88%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA1-1%E5%86%8D%E7%8F%BE%EF%BC%89.mp4) | 📂 [GitHub](https://github.com/kiyochann/marioReproduction)
+
 
 ---
 
